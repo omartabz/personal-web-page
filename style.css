@@ -9,12 +9,17 @@ body {
 }
 
 .Historic{ 
-    background-color: #DB6E8C;
+    /*background-color: #DB6E8C;*/
     margin: 0.5em;
     padding: 1em;
     border-radius: 1em;
-    border: 1px solid #3F292B;
+    /*border: 1px solid #3F292B;*/
     flex: 1;
+    /*block-inline*/
+}
+.Pichistory{
+    display:flex;
+    width: 50px;
 }
 
 @media (min-width:960px){
