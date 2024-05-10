@@ -4,8 +4,9 @@ body {
     
 }
 
-.body {
-    display: flex;
+.img {
+    height: 200px;
+    width:200px;
 }
 
 .Historic{ 
@@ -16,10 +17,6 @@ body {
     /*border: 1px solid #3F292B;*/
     flex: 1;
     /*block-inline*/
-}
-.Pichistory{
-    display:flex;
-    width: 50px;
 }
 
 @media (min-width:960px){
