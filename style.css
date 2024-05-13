@@ -1,15 +1,10 @@
 body {
     background-color: #DBBEA1;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
-    
+    background-image:url('table5jpg');
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.img {
-    height: 200px;
-    width:200px;
-}
-
-.Historic{ 
+.Historic { 
     /*background-color: #DB6E8C;*/
     margin: 0.5em;
     padding: 1em;
@@ -19,15 +14,20 @@ body {
     /*block-inline*/
 }
 
+.Places {
+    padding: 10px;
+    box-sizing: border-box;
+    display:inline-flex;
+    width: 46%;
+}
+
+.Places content {
+    /*display:inline-block;*/
+    /*flex-wrap:wrap ;*/
+    float: left;
+    width : 46%;
+ }   
 @media (min-width:960px){
+ 
 
-
-}
-
-input{
-    padding:1em;
-}
-
-fieldset {
-    margin:1em;
 }
