@@ -1,0 +1,18 @@
+body{
+    background-color: limegreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image:url(tech1.webp);
+}
+
+.back {
+text-align: center;
+background-color: whitesmoke;
+padding: 0.25em;
+border-radius: 1em;
+margin: 1em;
+
+}
+
+.back:hover{
+    background-color: grey;
+}

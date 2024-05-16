@@ -1,0 +1,83 @@
+body {
+    background-color: whitesmoke;
+    background-image:url('table7.jpg');
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.image{
+    width: 100%;
+    display:flex;
+    overflow:auto;
+    justify-content:space-between;
+    margin: left 200px;   
+
+}
+
+.flex-container{
+display: flex;
+
+}
+.introduction {
+    width: 100%;
+}
+.text {
+    float: left;
+    display: inline-flex;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Historic { 
+    /*background-color: #DB6E8C;*/
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 1em;
+    /*border: 1px solid #3F292B;*/
+    flex: 1;
+    /*block-inline*/
+}
+.subjects{
+    padding: 10px;
+    box-sizing: border-box;
+    display:flex;
+    width: 100%;
+    overflow:auto;
+    flex-wrap: wrap;
+}
+
+.Places {
+    float:inline-start;
+    display: inline-flex;
+    overflow: auto;
+}
+
+/*.contentPlaces {
+    /*display:inline-block;*/
+    /*flex-wrap:wrap ;*/  
+
+@media (max-width:960px){
+    .flex-container{
+    display:block;
+    }
+
+}
+@media (min-width:670px){
+    .flex-container{
+        display: flexbox;
+        order: 1;
+
+    }
+}
