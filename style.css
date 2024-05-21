@@ -70,14 +70,12 @@ display: flex;
 
 @media (max-width:960px){
     .flex-container{
-    display:block;
+    float: left;
     }
 
 }
 @media (min-width:670px){
-    .flex-container{
-        display: flexbox;
-        order: 1;
-
+    .mid-text-img{
+        float:left !important;
+        }
     }
-}
