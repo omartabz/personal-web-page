@@ -248,3 +248,14 @@ p {
     max-width: 60rem;
   }
 }
+@media screen and (max-width:960px){
+    .mid-text {
+      float: right!important;
+  }
+}
+.mid-text-img{
+  float:left !important;
+}
+.p{
+  font-size: 15px;
+}
