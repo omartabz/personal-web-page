@@ -16,28 +16,43 @@ body {
 }
 
 .flex-container{
-display: flex;
-
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    max-width: 1200px;
+    
 }
 .introduction {
     width: 100%;
 }
 .text {
-    float: left;
-    display: inline-flex;
+    display: flex;
 }
 
-.name {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+/*.name {
+    
+}*/
 
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+    flex:1 1 calc(33.333% - 20px);
+    overflow: hidden;
+}
+
+.container img{
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+    height: 250px;
+}
+
+.text-content{
+    text-align: center;
+}
+
+.container:hover img{
+    transform: scale(1.1);
 }
 
 .Historic { 
@@ -69,13 +84,42 @@ display: flex;
     /*flex-wrap:wrap ;*/  
 
 @media (max-width:960px){
-    .flex-container{
-    float: left;
+    .container{
+        flex: 1 1 calc(50% - 20px);
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .container img{
+        margin-bottom: 10px;
+    }
+    .text-content{
+        text-align: center;
     }
 
 }
-@media (min-width:670px){
-    .mid-text-img{
-        float:left !important;
-        }
+@media (max-width:670px){
+    .container{
+        flex: 1 1 100%;
+        flex-direction: row;
+        align-items:center;
     }
+    .container.reverse{
+        flex-direction: row-reverse;
+    }
+    .container img{
+        max-width: 150px;
+        margin:0 20px 0 0;
+
+    }   
+    .container.reverse img{
+        margin: 0 0 0 20px;
+    }
+
+    .text-content{
+        text-align: left;
+    }
+    .container.reverse .text-content{
+        text-align: right;
+    }
+}
