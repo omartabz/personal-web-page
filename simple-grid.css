@@ -16,6 +16,7 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
+  background-color: burlywood;
 }
 
 /* ROOT FONT STYLES */
@@ -89,6 +90,8 @@ p {
 .justify {
   text-align: justify;
 }
+
+
 
 /* ==== GRID SYSTEM ==== */
 
@@ -256,6 +259,6 @@ p {
 .mid-text-img{
   float:left !important;
 }
-.p{
+/*.p{
   font-size: 15px;
-}
+}*/
