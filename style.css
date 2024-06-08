@@ -18,20 +18,18 @@ body {
 .flex-container{
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
+    gap:25px;
     max-width: 1200px;
     
 }
 .introduction {
     width: 100%;
+    display: block;
+    height: auto;
 }
 .text {
     display: flex;
 }
-
-/*.name {
-    
-}*/
 
 .container{
     display:flex;
@@ -41,10 +39,9 @@ body {
 }
 
 .container img{
-    width: 250px;
-    transition: transform 0.3s ease-in-out;
+    width: 100%;
     margin-bottom: 10px;
-    height: 250px;
+    height: auto;
 }
 
 .text-content{
@@ -79,9 +76,17 @@ body {
     overflow: auto;
 }
 
-/*.contentPlaces {
-    /*display:inline-block;*/
-    /*flex-wrap:wrap ;*/  
+.container-text{
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+.float-image {
+    float: left; 
+    margin: 0 15px 15px 0; 
+    max-width: 300px;
+}
 
 @media (max-width:960px){
     .container{
@@ -100,16 +105,16 @@ body {
 }
 @media (max-width:670px){
     .container{
-        flex: 1 1 100%;
+        flex:100%;
         flex-direction: row;
-        align-items:center;
     }
     .container.reverse{
         flex-direction: row-reverse;
     }
     .container img{
         max-width: 150px;
-        margin:0 20px 0 0;
+        margin:20px;
+        text-wrap:wrap;
 
     }   
     .container.reverse img{
@@ -118,8 +123,10 @@ body {
 
     .text-content{
         text-align: left;
+        display: flex;
     }
     .container.reverse .text-content{
         text-align: right;
+        display: flex;
     }
 }
